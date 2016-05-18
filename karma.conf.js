@@ -75,7 +75,7 @@ module.exports = function(config) {
     // SL and travis config
     sauceLabs: {
       startConnect: true,
-      testName: 'nanogl-node unit tests'
+      testName: 'nanogl-camera unit tests'
     },
 
     // define SL browsers

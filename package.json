@@ -1,7 +1,7 @@
 {
   "name": "nanogl-camera",
   "version": "0.1.0",
-  "description": "handle objects transform in 3D space",
+  "description": "camera object for nanogl",
   "main": "camera.js",
   "scripts": {
     "test": "jshint *.js && karma start",
