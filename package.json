@@ -1,6 +1,6 @@
 {
   "name": "nanogl-camera",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "camera object for nanogl",
   "main": "camera.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/plepers/nanogl-camera#readme",
   "dependencies": {
     "gl-matrix": "2.3.1",
-    "nanogl-node": "^0.1.1"
+    "nanogl-node": "0.1.2"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
