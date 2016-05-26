@@ -104,6 +104,7 @@ PerspectiveLens.prototype = {
   setAutoFov : function( fov ){
     this._fov = fov;
     this._fovMode = FOV_MODE_AUTO;
+    this._invalidate();
   },
 
 
