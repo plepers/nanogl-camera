@@ -6,7 +6,7 @@ var PerspectiveLens = require( './perspective-lens' );
 var OrthoLens       = require( './ortho-lens' );
 
 
-var IMVP = mat4.create();
+var _M4 = mat4.create();
 
 
 
@@ -32,6 +32,12 @@ proto.modelViewMatrix = function( out, model ){
 
 proto.modelViewProjectionMatrix = function( out, model ){
   mat4.multiply( out, this._viewProj, model );
+};
+
+
+proto.getMVP = function( model ){
+  mat4.multiply( _M4, this._viewProj, model );
+  return _M4;
 };
 
 
