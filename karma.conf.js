@@ -142,12 +142,12 @@ module.exports = function(config) {
       //   version: '31',
       //   platform: 'OS X 10.9'
       // },
-      'SL_win10_Edge': {
-        base: 'SauceLabs',
-        browserName: 'MicrosoftEdge',
-        platform: 'Windows 10',
-        version: '20.10240'
-      },
+      // 'SL_win10_Edge': {
+      //   base: 'SauceLabs',
+      //   browserName: 'MicrosoftEdge',
+      //   platform: 'Windows 10',
+      //   version: '20.10240'
+      // },
     },
   });
 
