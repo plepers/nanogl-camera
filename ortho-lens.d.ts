@@ -13,9 +13,12 @@ declare class OrthographicLens implements ICameraLens {
     constructor();
     getProjection(): mat4;
     setBound(xMin: number, xMax: number, yMin: number, yMax: number): void;
-    near: number;
-    far: any;
-    aspect: any;
+    set near(v: number);
+    get near(): number;
+    set far(v: number);
+    get far(): number;
+    set aspect(v: number);
+    get aspect(): number;
     _updateProjection(): void;
     _invalidate(): void;
 }

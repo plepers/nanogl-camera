@@ -12,10 +12,14 @@ declare class PerspectiveLens implements ICameraLens {
     _valid: boolean;
     constructor();
     getProjection(): mat4;
-    fov: any;
-    near: any;
-    far: any;
-    aspect: any;
+    set fov(f: number);
+    get fov(): number;
+    set near(v: number);
+    get near(): number;
+    set far(v: number);
+    get far(): number;
+    set aspect(v: number);
+    get aspect(): number;
     setHorizontalFov(fov: number): void;
     setVerticalFov(fov: number): void;
     getHorizontalFov(): number;
