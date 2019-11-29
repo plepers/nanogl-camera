@@ -31,7 +31,7 @@ class Camera extends Node {
         gl_matrix_1.mat4.multiply(this._viewProj, this.lens.getProjection(), this._view);
     }
     _computeWorldMatrix(skipParents) {
-        Node.prototype._computeWorldMatrix.call(this, skipParents);
+        super._computeWorldMatrix(skipParents);
         gl_matrix_1.mat4.invert(this._view, this._wmatrix);
     }
     static makePerspectiveCamera() {

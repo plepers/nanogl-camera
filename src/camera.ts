@@ -61,7 +61,7 @@ class Camera extends Node {
 
 
   _computeWorldMatrix( skipParents : boolean ){
-    Node.prototype._computeWorldMatrix.call( this, skipParents );
+    super._computeWorldMatrix( skipParents );
     mat4.invert( this._view, this._wmatrix );
   }
 
