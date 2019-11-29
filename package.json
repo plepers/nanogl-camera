@@ -1,6 +1,6 @@
 {
   "name": "nanogl-camera",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "camera object for nanogl",
   "main": "camera.js",
   "scripts": {
