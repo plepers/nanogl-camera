@@ -13,10 +13,18 @@ cache:
   directories:
   - node_modules
 deploy:
-  provider: npm
-  email: contact@makemepulse.com
-  api_key:
-    secure: HT+Ql1b9iviluAmbSrnbQ9QkLgJs6tej6+jEqoJ3HGYDczl02pYIhin3w9rMo8DFhflv1q1Wx6vcZyZtS4VxHDt3GMVzGg4XZGDXLOR1Iwx3ZDrGSDT5ehwi9qImsRDXQKxgCfU7QPo9PjCGMXK0ELX3OBpLdTrUvodfOnRx/RQ4IX5fVl6tN2yN4hCOXqCycmsgsPx01inAJ9dIyEPLBBeAIfa+WHz4OFWPRzmJx/NeQdaj5VygSHZuSda9I5d6FR4UATiCHIWQZqNBNpO9MKf4Hz9yh2zRdfO+JO33aPEv6CJkRDdvK1I8puZRBZOBKfeYB1t31lJMtuqIr9NU2VgmPKUCQV8N+Bdyf/XopkF6OCL5ylLTiW3l51kTDg8XxdurFwE1OoRVKll7/4YF1jsqKvoAH7mv7kBAyMu+ERPjqQQ4qg9mIQ5j7PXTjmFDbt/MjMIkBTCclp5OdvZUuHx7VWvbe2LQhzkH/FQ7Gs11z8K0qxgJT40hCMW1n6TMTdgqG7VvJk35Fyg2r+dasp4YXb7fV7wsSvbo9K8MvFHYNPDTYtO+shDIwklRbLRScnoqLAuynvdk9zFeysoXYVqP36LM+aCSyPGcKCrB0NvLbwehTAarmG7tFCsEW8Y9l9cH3SwLM4sNQddzSeK9OvZP0pdGKBNqqRLe64csxd4=
-  on:
-    repo: plepers/nanogl-camera
-    branch: master
+  - provider: npm
+    email: pierre.lepers@gmail.com
+    api_key:
+      secure: qNrfh6BhUlMojTErG9RvZEzjyU0NBDaL30keX84VtNJ+7f5C3Mrrf6/U5GUaZ2hW4XRvSjjJvrABiwxNykk+2BU1Jy5XGI//S0EvM3hCmcl98nRGkis0vtYd5UiEdmM1dXcGxfTSUDZdgs/H3NHVQrwgYyHPH043mw0WJJzq6Yag3FJUQAjJGgxovgmjC6vHEaHZQUDP7ksBv5Uid/CN5OVFRq0nS2ACj41+ZrTfR2I8VtGS42PYBmmThDDKH01gNvf8BzmJSnzg8yejlULQxPhGtxRlimeSHVmvFFXVGrzbG7m+8dSZr46CHPfQpFMMHKB7d1Wfo7AqYMhlbiypdkq40SkJoD9IuIRkRenqtVGmb3g1XIqUPYaNkrDxVcFfTVc+7o3ZKfuSX5Vt8Dhq1uupxJUeSYEiz1W1nDUE0rVx7t7s5D6EycJKcoYlBwLTnW9HEpz/74uiaN3sa9Bgu8f6g7+/vBn/N9n43WQmn0jjsbxBOUP6kGexFVhMwKnqVbitKtON6bf+SnD4bRhsJxBzyy6QqyjDRjnaBBySViLlrpyqdhHWeC//2BFffYWaaf995ipzMXdjQMvjymgWsv4z1PMurtDpnRnjbIHw/m+WyM+qsOzt2b+k55qUyV5TqI1CGiNRDPrrn0p6l7t0yhow0VQgVvtNMQzUPiesIC8=
+    on:
+      branch: master
+      repo: plepers/nanogl-camera
+  - provider: npm
+    email: pierre.lepers@gmail.com
+    dry_run: true
+    api_key:
+      secure: qNrfh6BhUlMojTErG9RvZEzjyU0NBDaL30keX84VtNJ+7f5C3Mrrf6/U5GUaZ2hW4XRvSjjJvrABiwxNykk+2BU1Jy5XGI//S0EvM3hCmcl98nRGkis0vtYd5UiEdmM1dXcGxfTSUDZdgs/H3NHVQrwgYyHPH043mw0WJJzq6Yag3FJUQAjJGgxovgmjC6vHEaHZQUDP7ksBv5Uid/CN5OVFRq0nS2ACj41+ZrTfR2I8VtGS42PYBmmThDDKH01gNvf8BzmJSnzg8yejlULQxPhGtxRlimeSHVmvFFXVGrzbG7m+8dSZr46CHPfQpFMMHKB7d1Wfo7AqYMhlbiypdkq40SkJoD9IuIRkRenqtVGmb3g1XIqUPYaNkrDxVcFfTVc+7o3ZKfuSX5Vt8Dhq1uupxJUeSYEiz1W1nDUE0rVx7t7s5D6EycJKcoYlBwLTnW9HEpz/74uiaN3sa9Bgu8f6g7+/vBn/N9n43WQmn0jjsbxBOUP6kGexFVhMwKnqVbitKtON6bf+SnD4bRhsJxBzyy6QqyjDRjnaBBySViLlrpyqdhHWeC//2BFffYWaaf995ipzMXdjQMvjymgWsv4z1PMurtDpnRnjbIHw/m+WyM+qsOzt2b+k55qUyV5TqI1CGiNRDPrrn0p6l7t0yhow0VQgVvtNMQzUPiesIC8=
+    on:
+      branch: develop
+      repo: plepers/nanogl-camera
