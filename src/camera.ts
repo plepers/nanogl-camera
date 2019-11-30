@@ -10,15 +10,15 @@ const  _M4  = mat4.create();
 const  IMVP = mat4.create();
 
 
-class Camera extends Node {
+class Camera<TLens extends ICameraLens> extends Node {
 
-  lens : ICameraLens;
+  lens : TLens;
 
   _view    : mat4;
   _viewProj: mat4;
 
 
-  constructor( lens : ICameraLens ){
+  constructor( lens : TLens ){
 
     super();
 
@@ -66,12 +66,12 @@ class Camera extends Node {
   }
 
 
-  static makePerspectiveCamera(){
+  static makePerspectiveCamera() : Camera<PerspectiveLens>{
     return new Camera( new PerspectiveLens() );
   }
 
 
-  static makeOrthoCamera(){
+  static makeOrthoCamera() : Camera<OrthographicLens>{
     return new Camera( new OrthographicLens() );
   }
 
