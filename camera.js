@@ -1,69 +1,44 @@
-
-var Node            = require( 'nanogl-node' );
-var mat4            = require( 'gl-matrix/src/gl-matrix/mat4' );
-
-var PerspectiveLens = require( './perspective-lens' );
-var OrthoLens       = require( './ortho-lens' );
-
-
-var IMVP = mat4.create();
-
-
-
-function Camera( lens ){
-
-  Node.call( this );
-
-  this.lens      = lens;
-
-  this._view     = mat4.create();
-  this._viewProj = mat4.create();
-
+"use strict";
+const gl_matrix_1 = require("gl-matrix");
+const Node = require("nanogl-node");
+const PerspectiveLens = require("./perspective-lens");
+const OrthographicLens = require("./ortho-lens");
+const _M4 = gl_matrix_1.mat4.create();
+const IMVP = gl_matrix_1.mat4.create();
+class Camera extends Node {
+    constructor(lens) {
+        super();
+        this.lens = lens;
+        this._view = gl_matrix_1.mat4.create();
+        this._viewProj = gl_matrix_1.mat4.create();
+    }
+    modelViewMatrix(out, model) {
+        gl_matrix_1.mat4.multiply(out, model, this._view);
+    }
+    modelViewProjectionMatrix(out, model) {
+        gl_matrix_1.mat4.multiply(out, this._viewProj, model);
+    }
+    getMVP(model) {
+        gl_matrix_1.mat4.multiply(_M4, this._viewProj, model);
+        return _M4;
+    }
+    unproject(out, v) {
+        gl_matrix_1.mat4.invert(IMVP, this._viewProj);
+        gl_matrix_1.vec3.transformMat4(out, v, IMVP);
+    }
+    updateViewProjectionMatrix(w, h) {
+        this.lens.aspect = w / h;
+        gl_matrix_1.mat4.multiply(this._viewProj, this.lens.getProjection(), this._view);
+    }
+    _computeWorldMatrix(skipParents) {
+        super._computeWorldMatrix(skipParents);
+        gl_matrix_1.mat4.invert(this._view, this._wmatrix);
+    }
+    static makePerspectiveCamera() {
+        return new Camera(new PerspectiveLens());
+    }
+    static makeOrthoCamera() {
+        return new Camera(new OrthographicLens());
+    }
 }
-
-
-var proto = Object.create( Node.prototype );
-
-
-proto.modelViewMatrix = function( out, model ){
-  mat4.multiply( out, model, this._view );
-};
-
-
-proto.modelViewProjectionMatrix = function( out, model ){
-  mat4.multiply( out, this._viewProj, model );
-};
-
-
-proto.unproject = function( out, v ){
-  mat4.invert( IMVP, this._proj );
-  vec3.transformMat4( out, v, IMVP );
-};
-
-
-proto.updateViewProjectionMatrix = function( w, h ){
-  this.lens.aspect = w/h;
-  mat4.multiply( this._viewProj, this.lens.getProjection(), this._view );
-};
-
-
-proto._computeWorldMatrix = function( skipParents ){
-  Node.prototype._computeWorldMatrix.call( this, skipParents );
-  mat4.invert( this._view, this._wmatrix );
-};
-
-
-Camera.makePerspectiveCamera = function(){
-  return new Camera( new PerspectiveLens() );
-};
-
-
-Camera.makeOrthoCamera = function(){
-  return new Camera( new OrthoLens() );
-};
-
-
-proto.constructor = Camera;
-Camera.prototype = proto;
-
 module.exports = Camera;
