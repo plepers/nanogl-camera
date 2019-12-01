@@ -11,7 +11,7 @@ const  _M4  = mat4.create();
 const  IMVP = mat4.create();
 
 
-class Camera<TLens extends ICameraLens> extends Node {
+export default class Camera<TLens extends ICameraLens = ICameraLens> extends Node {
 
   lens : TLens;
 
@@ -77,5 +77,3 @@ class Camera<TLens extends ICameraLens> extends Node {
   }
 
 }
-
-export default Camera
