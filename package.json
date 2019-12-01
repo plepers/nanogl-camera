@@ -2,7 +2,7 @@
   "name": "nanogl-camera",
   "version": "1.0.1",
   "description": "camera object for nanogl",
-  "main": "camera.js",
+  "main": "index.js",
   "scripts": {
     "test": "tsc && karma start",
     "gztest": "browserify camera.js -o gztest.js && uglifyjs --screw-ie8 -m -c warnings=false -o gztest.min.js -- gztest.js && gzip -k -9 gztest.min.js && stat -f%z gztest.min.js.gz && rm ./*gztest*"
@@ -22,12 +22,19 @@
     "url": "https://github.com/plepers/nanogl-camera/issues"
   },
   "homepage": "https://github.com/plepers/nanogl-camera#readme",
+  "browserify": {
+    "transform": [["babelify", { "presets": ["@babel/preset-env"] }]]
+  },
+  "types": "index.d.ts",
   "dependencies": {
     "@types/gl-matrix": "^2.4.5",
     "gl-matrix": "^3.1.0",
     "nanogl-node": "~1.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babelify": "^10.0.0",
     "expect.js": "^0.3.1",
     "karma": "^4.4.1",
     "karma-browserify": "^6.1.0",

@@ -22,4 +22,4 @@ declare class OrthographicLens implements ICameraLens {
     _updateProjection(): void;
     _invalidate(): void;
 }
-export = OrthographicLens;
+export default OrthographicLens;

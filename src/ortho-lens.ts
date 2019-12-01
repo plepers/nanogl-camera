@@ -111,4 +111,4 @@ class OrthographicLens implements ICameraLens {
 
 
 
-export = OrthographicLens;
+export default OrthographicLens

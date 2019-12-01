@@ -1,5 +1,4 @@
-"use strict";
-const gl_matrix_1 = require("gl-matrix");
+import { mat4 } from "gl-matrix";
 class PerspectiveLens {
     constructor() {
         this._near = 0.01;
@@ -9,7 +8,7 @@ class PerspectiveLens {
         this._hfov = 0.0;
         this._aspect = 1.0;
         this._fovMode = 0;
-        this._proj = gl_matrix_1.mat4.create();
+        this._proj = mat4.create();
         this._valid = false;
     }
     getProjection() {
@@ -76,11 +75,11 @@ class PerspectiveLens {
             this._hfov = this._fov;
             this._vfov = Math.atan(Math.tan(this._fov / 2.0) / aspect) * 2.0;
         }
-        gl_matrix_1.mat4.perspective(this._proj, this._vfov, aspect, this._near, this._far);
+        mat4.perspective(this._proj, this._vfov, aspect, this._near, this._far);
         this._valid = true;
     }
     _invalidate() {
         this._valid = false;
     }
 }
-module.exports = PerspectiveLens;
+export default PerspectiveLens;

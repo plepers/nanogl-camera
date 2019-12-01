@@ -1,9 +1,10 @@
-import { mat4, vec3 } from "gl-matrix";
-import Node = require( 'nanogl-node' )
+import { mat4, vec3 } from "gl-matrix"
 
-import { ICameraLens } from "./ICameraLens";
-import PerspectiveLens = require("./perspective-lens");
-import OrthographicLens = require("./ortho-lens");
+import Node from 'nanogl-node'
+
+import { ICameraLens } from "./ICameraLens"
+import PerspectiveLens from "./perspective-lens" 
+import OrthographicLens from "./ortho-lens" 
 
 
 const  _M4  = mat4.create();
@@ -77,4 +78,4 @@ class Camera<TLens extends ICameraLens> extends Node {
 
 }
 
-export = Camera;
+export default Camera
