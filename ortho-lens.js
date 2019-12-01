@@ -1,5 +1,4 @@
-"use strict";
-const gl_matrix_1 = require("gl-matrix");
+import { mat4 } from "gl-matrix";
 class OrthographicLens {
     constructor() {
         this._near = 0.01;
@@ -9,7 +8,7 @@ class OrthographicLens {
         this._yMin = -1.0;
         this._yMax = 1.0;
         this._aspect = 1.0;
-        this._proj = gl_matrix_1.mat4.create();
+        this._proj = mat4.create();
         this._valid = false;
     }
     getProjection() {
@@ -46,11 +45,11 @@ class OrthographicLens {
     }
     get aspect() { return this._aspect; }
     _updateProjection() {
-        gl_matrix_1.mat4.ortho(this._proj, this._xMin, this._xMax, this._yMin, this._yMax, this._near, this._far);
+        mat4.ortho(this._proj, this._xMin, this._xMax, this._yMin, this._yMax, this._near, this._far);
         this._valid = true;
     }
     _invalidate() {
         this._valid = false;
     }
 }
-module.exports = OrthographicLens;
+export default OrthographicLens;

@@ -1,11 +1,11 @@
-var Camera   = require( '../camera' );
-var Node     = require( 'nanogl-node' );
-var equalish = require( './equalish' );
+import Camera from '../index'
+import Node from 'nanogl-node'
+import equalish from './equalish'
 
 
-var expect = require( 'expect.js' ),
-    glmat  = require( 'gl-matrix' ),
-    sinon  = require( 'sinon' );
+import expect from 'expect.js'
+import { mat4 } from 'gl-matrix';
+// import sinon  from 'sinon'
 
 
 
@@ -77,7 +77,7 @@ describe( "Camera", function(){
     describe( "modelViewMatrix", function(){
 
       it( 'should be correct', function(){
-        var m = glmat.mat4.create();
+        var m = mat4.create();
         cam.modelViewMatrix( m, n2._wmatrix );
 
         equalish( m, [
@@ -90,7 +90,7 @@ describe( "Camera", function(){
       });
 
       it( 'should be correct after node update', function(){
-        var m = glmat.mat4.create();
+        var m = mat4.create();
         n2.x = 10;
         n2.updateWorldMatrix()
         cam.modelViewMatrix( m, n2._wmatrix );
@@ -100,7 +100,7 @@ describe( "Camera", function(){
       });
 
       it( 'should be correct after cam update', function(){
-        var m = glmat.mat4.create();
+        var m = mat4.create();
         cam.z = 2;
         cam.updateWorldMatrix()
         cam.modelViewMatrix( m, n2._wmatrix );
@@ -110,7 +110,7 @@ describe( "Camera", function(){
       });
 
       it( 'should be correct after world update', function(){
-        var m = glmat.mat4.create();
+        var m = mat4.create();
         cam.z = 1;
         n2.x = 9;
         root.updateWorldMatrix()

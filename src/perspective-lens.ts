@@ -155,4 +155,4 @@ class PerspectiveLens implements ICameraLens {
    
 }
 
-export = PerspectiveLens;
+export default PerspectiveLens

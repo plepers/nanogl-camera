@@ -28,4 +28,4 @@ declare class PerspectiveLens implements ICameraLens {
     _updateProjection(): void;
     _invalidate(): void;
 }
-export = PerspectiveLens;
+export default PerspectiveLens;
