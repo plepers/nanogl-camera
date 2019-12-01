@@ -29,7 +29,7 @@
   "dependencies": {
     "@types/gl-matrix": "^2.4.5",
     "gl-matrix": "^3.1.0",
-    "nanogl-node": "~1.0.0"
+    "nanogl-node": "~1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
