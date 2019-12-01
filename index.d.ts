@@ -3,7 +3,7 @@ import Node from 'nanogl-node';
 import { ICameraLens } from "./ICameraLens";
 import PerspectiveLens from "./perspective-lens";
 import OrthographicLens from "./ortho-lens";
-declare class Camera<TLens extends ICameraLens> extends Node {
+export default class Camera<TLens extends ICameraLens = ICameraLens> extends Node {
     lens: TLens;
     _view: mat4;
     _viewProj: mat4;
@@ -17,4 +17,3 @@ declare class Camera<TLens extends ICameraLens> extends Node {
     static makePerspectiveCamera(): Camera<PerspectiveLens>;
     static makeOrthoCamera(): Camera<OrthographicLens>;
 }
-export default Camera;

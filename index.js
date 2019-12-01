@@ -4,7 +4,7 @@ import PerspectiveLens from "./perspective-lens";
 import OrthographicLens from "./ortho-lens";
 const _M4 = mat4.create();
 const IMVP = mat4.create();
-class Camera extends Node {
+export default class Camera extends Node {
     constructor(lens) {
         super();
         this.lens = lens;
@@ -40,4 +40,3 @@ class Camera extends Node {
         return new Camera(new OrthographicLens());
     }
 }
-export default Camera;
