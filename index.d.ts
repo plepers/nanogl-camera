@@ -5,8 +5,8 @@ import PerspectiveLens from "./perspective-lens";
 import OrthographicLens from "./ortho-lens";
 export default class Camera<TLens extends ICameraLens = ICameraLens> extends Node {
     lens: TLens;
-    _view: mat4;
-    _viewProj: mat4;
+    readonly _view: mat4;
+    readonly _viewProj: mat4;
     constructor(lens: TLens);
     modelViewMatrix(out: mat4, model: mat4): void;
     modelViewProjectionMatrix(out: mat4, model: mat4): void;

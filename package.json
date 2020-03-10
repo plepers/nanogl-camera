@@ -36,14 +36,15 @@
   },
   "types": "index.d.ts",
   "dependencies": {
-    "@types/gl-matrix": "^2.4.5",
-    "gl-matrix": "^3.1.0",
-    "nanogl-node": "~1.1.0"
+    "@types/gl-matrix": "2.3.1",
+    "gl-matrix": "2.3.1",
+    "nanogl-node": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
     "expect.js": "^0.3.1",
     "karma": "^4.4.1",
     "karma-browserify": "^6.1.0",

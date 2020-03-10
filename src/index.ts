@@ -15,8 +15,8 @@ export default class Camera<TLens extends ICameraLens = ICameraLens> extends Nod
 
   lens : TLens;
 
-  _view    : mat4;
-  _viewProj: mat4;
+  readonly _view    : mat4;
+  readonly _viewProj: mat4;
 
 
   constructor( lens : TLens ){
