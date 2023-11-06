@@ -1,0 +1,3426 @@
+{
+	"id": 0,
+	"name": "nanogl-camera",
+	"kind": 1,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "ICameraLens",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "ICameraLens",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"children": [
+						{
+							"id": 7,
+							"name": "aspect",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ICameraLens.ts",
+									"line": 9,
+									"character": 4,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L9"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 6,
+							"name": "far",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ICameraLens.ts",
+									"line": 8,
+									"character": 4,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L8"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 5,
+							"name": "near",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ICameraLens.ts",
+									"line": 7,
+									"character": 4,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L7"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 3,
+							"name": "getProjection",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ICameraLens.ts",
+									"line": 6,
+									"character": 4,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L6"
+								}
+							],
+							"signatures": [
+								{
+									"id": 4,
+									"name": "getProjection",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "mat4",
+										"qualifiedName": "mat4",
+										"package": "@types/gl-matrix"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								7,
+								6,
+								5
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								3
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/ICameraLens.ts",
+							"line": 4,
+							"character": 17,
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L4"
+						}
+					],
+					"implementedBy": [
+						{
+							"type": "reference",
+							"id": 99,
+							"name": "OrthographicLens"
+						},
+						{
+							"type": "reference",
+							"id": 136,
+							"name": "PerspectiveLens"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/ICameraLens.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "index",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 9,
+					"name": "Camera",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"originalName": "default",
+					"children": [
+						{
+							"id": 14,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 22,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L22"
+								}
+							],
+							"signatures": [
+								{
+									"id": 15,
+									"name": "new Camera",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"typeParameter": [
+										{
+											"id": 16,
+											"name": "TLens",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"id": 2,
+												"name": "ICameraLens"
+											},
+											"default": {
+												"type": "reference",
+												"id": 2,
+												"name": "ICameraLens"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 17,
+											"name": "lens",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"id": 16,
+												"name": "TLens"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 9,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 16,
+												"name": "TLens"
+											}
+										],
+										"name": "default"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "Node.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "Node.constructor"
+							}
+						},
+						{
+							"id": 50,
+							"name": "_children",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 10,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "Node",
+									"qualifiedName": "Node",
+									"package": "nanogl-node"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node._children"
+							}
+						},
+						{
+							"id": 46,
+							"name": "_matrix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 6,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "mat4",
+								"qualifiedName": "mat4",
+								"package": "@types/gl-matrix"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node._matrix"
+							}
+						},
+						{
+							"id": 49,
+							"name": "_parent",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 9,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"name": "Node",
+										"qualifiedName": "Node",
+										"package": "nanogl-node"
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node._parent"
+							}
+						},
+						{
+							"id": 19,
+							"name": "_view",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 18,
+									"character": 11,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L18"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "mat4",
+								"qualifiedName": "mat4",
+								"package": "@types/gl-matrix"
+							}
+						},
+						{
+							"id": 20,
+							"name": "_viewProj",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 19,
+									"character": 11,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L19"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "mat4",
+								"qualifiedName": "mat4",
+								"package": "@types/gl-matrix"
+							}
+						},
+						{
+							"id": 47,
+							"name": "_wmatrix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 7,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "mat4",
+								"qualifiedName": "mat4",
+								"package": "@types/gl-matrix"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node._wmatrix"
+							}
+						},
+						{
+							"id": 48,
+							"name": "_wposition",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 8,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Float32Array",
+								"qualifiedName": "Float32Array",
+								"package": "typescript"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node._wposition"
+							}
+						},
+						{
+							"id": 18,
+							"name": "lens",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 16,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L16"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 16,
+								"name": "TLens"
+							}
+						},
+						{
+							"id": 43,
+							"name": "position",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 3,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "vec3",
+								"qualifiedName": "vec3",
+								"package": "@types/gl-matrix"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.position"
+							}
+						},
+						{
+							"id": 44,
+							"name": "rotation",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 4,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "quat",
+								"qualifiedName": "quat",
+								"package": "@types/gl-matrix"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.rotation"
+							}
+						},
+						{
+							"id": 45,
+							"name": "scale",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExternal": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 5,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "vec3",
+								"qualifiedName": "vec3",
+								"package": "@types/gl-matrix"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.scale"
+							}
+						},
+						{
+							"id": 60,
+							"name": "x",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 17,
+									"character": 8
+								},
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 20,
+									"character": 8
+								}
+							],
+							"getSignature": {
+								"id": 61,
+								"name": "x",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {
+									"isExternal": true
+								},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"inheritedFrom": {
+									"type": "reference",
+									"name": "Node.x"
+								}
+							},
+							"setSignature": {
+								"id": 62,
+								"name": "x",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {
+									"isExternal": true
+								},
+								"parameters": [
+									{
+										"id": 63,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {
+											"isExternal": true
+										},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"inheritedFrom": {
+									"type": "reference",
+									"name": "Node.x"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.x"
+							}
+						},
+						{
+							"id": 64,
+							"name": "y",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 18,
+									"character": 8
+								},
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 21,
+									"character": 8
+								}
+							],
+							"getSignature": {
+								"id": 65,
+								"name": "y",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {
+									"isExternal": true
+								},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"inheritedFrom": {
+									"type": "reference",
+									"name": "Node.y"
+								}
+							},
+							"setSignature": {
+								"id": 66,
+								"name": "y",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {
+									"isExternal": true
+								},
+								"parameters": [
+									{
+										"id": 67,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {
+											"isExternal": true
+										},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"inheritedFrom": {
+									"type": "reference",
+									"name": "Node.y"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.y"
+							}
+						},
+						{
+							"id": 68,
+							"name": "z",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 19,
+									"character": 8
+								},
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 22,
+									"character": 8
+								}
+							],
+							"getSignature": {
+								"id": 69,
+								"name": "z",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {
+									"isExternal": true
+								},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"inheritedFrom": {
+									"type": "reference",
+									"name": "Node.z"
+								}
+							},
+							"setSignature": {
+								"id": 70,
+								"name": "z",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {
+									"isExternal": true
+								},
+								"parameters": [
+									{
+										"id": 71,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {
+											"isExternal": true
+										},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"inheritedFrom": {
+									"type": "reference",
+									"name": "Node.z"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.z"
+							}
+						},
+						{
+							"id": 40,
+							"name": "_computeWorldMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 64,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L64"
+								}
+							],
+							"signatures": [
+								{
+									"id": 41,
+									"name": "_computeWorldMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 42,
+											"name": "skipParents",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "Node._computeWorldMatrix"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "Node._computeWorldMatrix"
+							}
+						},
+						{
+							"id": 94,
+							"name": "_hasInvalidWorldMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 32,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 95,
+									"name": "_hasInvalidWorldMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 96,
+											"name": "skipParents",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node._hasInvalidWorldMatrix"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node._hasInvalidWorldMatrix"
+							}
+						},
+						{
+							"id": 81,
+							"name": "add",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 26,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 82,
+									"name": "add",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 83,
+											"name": "child",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Node",
+												"qualifiedName": "Node",
+												"package": "nanogl-node"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.add"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.add"
+							}
+						},
+						{
+							"id": 29,
+							"name": "getMVP",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 45,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L45"
+								}
+							],
+							"signatures": [
+								{
+									"id": 30,
+									"name": "getMVP",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 31,
+											"name": "model",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "mat4",
+												"qualifiedName": "mat4",
+												"package": "@types/gl-matrix"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "mat4",
+										"qualifiedName": "mat4",
+										"package": "@types/gl-matrix"
+									}
+								}
+							]
+						},
+						{
+							"id": 87,
+							"name": "invalidate",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 28,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 88,
+									"name": "invalidate",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.invalidate"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.invalidate"
+							}
+						},
+						{
+							"id": 75,
+							"name": "lookAt",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 24,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 76,
+									"name": "lookAt",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 77,
+											"name": "tgt",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "vec3",
+												"qualifiedName": "vec3",
+												"package": "@types/gl-matrix"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.lookAt"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.lookAt"
+							}
+						},
+						{
+							"id": 21,
+							"name": "modelViewMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 35,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L35"
+								}
+							],
+							"signatures": [
+								{
+									"id": 22,
+									"name": "modelViewMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 23,
+											"name": "out",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "mat4",
+												"qualifiedName": "mat4",
+												"package": "@types/gl-matrix"
+											}
+										},
+										{
+											"id": 24,
+											"name": "model",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "mat4",
+												"qualifiedName": "mat4",
+												"package": "@types/gl-matrix"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 25,
+							"name": "modelViewProjectionMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 40,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L40"
+								}
+							],
+							"signatures": [
+								{
+									"id": 26,
+									"name": "modelViewProjectionMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 27,
+											"name": "out",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "mat4",
+												"qualifiedName": "mat4",
+												"package": "@types/gl-matrix"
+											}
+										},
+										{
+											"id": 28,
+											"name": "model",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "mat4",
+												"qualifiedName": "mat4",
+												"package": "@types/gl-matrix"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 84,
+							"name": "remove",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 27,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 85,
+									"name": "remove",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 86,
+											"name": "child",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "Node",
+												"qualifiedName": "Node",
+												"package": "nanogl-node"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.remove"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.remove"
+							}
+						},
+						{
+							"id": 51,
+							"name": "rotateX",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 14,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 52,
+									"name": "rotateX",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 53,
+											"name": "rad",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.rotateX"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.rotateX"
+							}
+						},
+						{
+							"id": 54,
+							"name": "rotateY",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 15,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 55,
+									"name": "rotateY",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 56,
+											"name": "rad",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.rotateY"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.rotateY"
+							}
+						},
+						{
+							"id": 57,
+							"name": "rotateZ",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 16,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 58,
+									"name": "rotateZ",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 59,
+											"name": "rad",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.rotateZ"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.rotateZ"
+							}
+						},
+						{
+							"id": 78,
+							"name": "setMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 25,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 79,
+									"name": "setMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 80,
+											"name": "m4",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "mat4",
+												"qualifiedName": "mat4",
+												"package": "@types/gl-matrix"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.setMatrix"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.setMatrix"
+							}
+						},
+						{
+							"id": 72,
+							"name": "setScale",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 23,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 73,
+									"name": "setScale",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 74,
+											"name": "s",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.setScale"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.setScale"
+							}
+						},
+						{
+							"id": 32,
+							"name": "unproject",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 51,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L51"
+								}
+							],
+							"signatures": [
+								{
+									"id": 33,
+									"name": "unproject",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 34,
+											"name": "out",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "vec3",
+												"qualifiedName": "vec3",
+												"package": "@types/gl-matrix"
+											}
+										},
+										{
+											"id": 35,
+											"name": "v",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "vec3",
+												"qualifiedName": "vec3",
+												"package": "@types/gl-matrix"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 89,
+							"name": "updateMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 29,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 90,
+									"name": "updateMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.updateMatrix"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.updateMatrix"
+							}
+						},
+						{
+							"id": 36,
+							"name": "updateViewProjectionMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 58,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L58"
+								}
+							],
+							"signatures": [
+								{
+									"id": 37,
+									"name": "updateViewProjectionMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 38,
+											"name": "w",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 39,
+											"name": "h",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 91,
+							"name": "updateWorldMatrix",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/nanogl-node/index.d.ts",
+									"line": 30,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 92,
+									"name": "updateWorldMatrix",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExternal": true
+									},
+									"parameters": [
+										{
+											"id": 93,
+											"name": "skipParents",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "Node.updateWorldMatrix"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "Node.updateWorldMatrix"
+							}
+						},
+						{
+							"id": 12,
+							"name": "makeOrthoCamera",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isStatic": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 75,
+									"character": 9,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L75"
+								}
+							],
+							"signatures": [
+								{
+									"id": 13,
+									"name": "makeOrthoCamera",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 9,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 99,
+												"name": "OrthographicLens"
+											}
+										],
+										"name": "default"
+									}
+								}
+							]
+						},
+						{
+							"id": 10,
+							"name": "makePerspectiveCamera",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isStatic": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 70,
+									"character": 9,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L70"
+								}
+							],
+							"signatures": [
+								{
+									"id": 11,
+									"name": "makePerspectiveCamera",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 9,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 136,
+												"name": "PerspectiveLens"
+											}
+										],
+										"name": "default"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								14
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								50,
+								46,
+								49,
+								19,
+								20,
+								47,
+								48,
+								18,
+								43,
+								44,
+								45
+							]
+						},
+						{
+							"title": "Accessors",
+							"children": [
+								60,
+								64,
+								68
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								40,
+								94,
+								81,
+								29,
+								87,
+								75,
+								21,
+								25,
+								84,
+								51,
+								54,
+								57,
+								78,
+								72,
+								32,
+								89,
+								36,
+								91,
+								12,
+								10
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 14,
+							"character": 21,
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L14"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 97,
+							"name": "TLens",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 2,
+								"name": "ICameraLens"
+							},
+							"default": {
+								"type": "reference",
+								"id": 2,
+								"name": "ICameraLens"
+							}
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Node",
+							"qualifiedName": "Node",
+							"package": "nanogl-node"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						9
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 98,
+			"name": "ortho-lens",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 99,
+					"name": "OrthographicLens",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"originalName": "default",
+					"children": [
+						{
+							"id": 100,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 22,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L22"
+								}
+							],
+							"signatures": [
+								{
+									"id": 101,
+									"name": "new OrthographicLens",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 99,
+										"name": "OrthographicLens"
+									}
+								}
+							]
+						},
+						{
+							"id": 108,
+							"name": "_aspect",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 14,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L14"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 103,
+							"name": "_far",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 9,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L9"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 102,
+							"name": "_near",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 8,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L8"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 109,
+							"name": "_proj",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 16,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L16"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "mat4",
+								"qualifiedName": "mat4",
+								"package": "@types/gl-matrix"
+							}
+						},
+						{
+							"id": 110,
+							"name": "_valid",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 18,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L18"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 105,
+							"name": "_xMax",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 11,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L11"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 104,
+							"name": "_xMin",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 10,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L10"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 107,
+							"name": "_yMax",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 13,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L13"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 106,
+							"name": "_yMin",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 12,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L12"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 127,
+							"name": "aspect",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 78,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L78"
+								},
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 85,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L85"
+								}
+							],
+							"getSignature": {
+								"id": 128,
+								"name": "aspect",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 7,
+									"name": "ICameraLens.aspect"
+								}
+							},
+							"setSignature": {
+								"id": 129,
+								"name": "aspect",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 130,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 7,
+									"name": "ICameraLens.aspect"
+								}
+							},
+							"implementationOf": {
+								"type": "reference",
+								"id": 7,
+								"name": "ICameraLens.aspect"
+							}
+						},
+						{
+							"id": 123,
+							"name": "far",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 68,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L68"
+								},
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 75,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L75"
+								}
+							],
+							"getSignature": {
+								"id": 124,
+								"name": "far",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 6,
+									"name": "ICameraLens.far"
+								}
+							},
+							"setSignature": {
+								"id": 125,
+								"name": "far",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 126,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 6,
+									"name": "ICameraLens.far"
+								}
+							},
+							"implementationOf": {
+								"type": "reference",
+								"id": 6,
+								"name": "ICameraLens.far"
+							}
+						},
+						{
+							"id": 119,
+							"name": "near",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 58,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L58"
+								},
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 65,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L65"
+								}
+							],
+							"getSignature": {
+								"id": 120,
+								"name": "near",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 5,
+									"name": "ICameraLens.near"
+								}
+							},
+							"setSignature": {
+								"id": 121,
+								"name": "near",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 122,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 5,
+									"name": "ICameraLens.near"
+								}
+							},
+							"implementationOf": {
+								"type": "reference",
+								"id": 5,
+								"name": "ICameraLens.near"
+							}
+						},
+						{
+							"id": 133,
+							"name": "_invalidate",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 105,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L105"
+								}
+							],
+							"signatures": [
+								{
+									"id": 134,
+									"name": "_invalidate",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 131,
+							"name": "_updateProjection",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 89,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L89"
+								}
+							],
+							"signatures": [
+								{
+									"id": 132,
+									"name": "_updateProjection",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 111,
+							"name": "getProjection",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 41,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L41"
+								}
+							],
+							"signatures": [
+								{
+									"id": 112,
+									"name": "getProjection",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "mat4",
+										"qualifiedName": "mat4",
+										"package": "@types/gl-matrix"
+									},
+									"implementationOf": {
+										"type": "reference",
+										"id": 4,
+										"name": "ICameraLens.getProjection"
+									}
+								}
+							],
+							"implementationOf": {
+								"type": "reference",
+								"id": 3,
+								"name": "ICameraLens.getProjection"
+							}
+						},
+						{
+							"id": 113,
+							"name": "setBound",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/ortho-lens.ts",
+									"line": 49,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L49"
+								}
+							],
+							"signatures": [
+								{
+									"id": 114,
+									"name": "setBound",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 115,
+											"name": "xMin",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 116,
+											"name": "xMax",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 117,
+											"name": "yMin",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 118,
+											"name": "yMax",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								100
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								108,
+								103,
+								102,
+								109,
+								110,
+								105,
+								104,
+								107,
+								106
+							]
+						},
+						{
+							"title": "Accessors",
+							"children": [
+								127,
+								123,
+								119
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								133,
+								131,
+								111,
+								113
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/ortho-lens.ts",
+							"line": 5,
+							"character": 6,
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L5"
+						}
+					],
+					"implementedTypes": [
+						{
+							"type": "reference",
+							"id": 2,
+							"name": "ICameraLens"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						99
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/ortho-lens.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 135,
+			"name": "perspective-lens",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 136,
+					"name": "PerspectiveLens",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"originalName": "default",
+					"children": [
+						{
+							"id": 137,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 28,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L28"
+								}
+							],
+							"signatures": [
+								{
+									"id": 138,
+									"name": "new PerspectiveLens",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 136,
+										"name": "PerspectiveLens"
+									}
+								}
+							]
+						},
+						{
+							"id": 144,
+							"name": "_aspect",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 21,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L21"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 140,
+							"name": "_far",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 17,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L17"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 141,
+							"name": "_fov",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 18,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L18"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 145,
+							"name": "_fovMode",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 22,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L22"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 143,
+							"name": "_hfov",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 20,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L20"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 139,
+							"name": "_near",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 16,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L16"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 146,
+							"name": "_proj",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 24,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L24"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "mat4",
+								"qualifiedName": "mat4",
+								"package": "@types/gl-matrix"
+							}
+						},
+						{
+							"id": 147,
+							"name": "_valid",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 26,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L26"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 142,
+							"name": "_vfov",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 19,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L19"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 162,
+							"name": "aspect",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 82,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L82"
+								},
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 89,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L89"
+								}
+							],
+							"getSignature": {
+								"id": 163,
+								"name": "aspect",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 7,
+									"name": "ICameraLens.aspect"
+								}
+							},
+							"setSignature": {
+								"id": 164,
+								"name": "aspect",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 165,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 7,
+									"name": "ICameraLens.aspect"
+								}
+							},
+							"implementationOf": {
+								"type": "reference",
+								"id": 7,
+								"name": "ICameraLens.aspect"
+							}
+						},
+						{
+							"id": 158,
+							"name": "far",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 72,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L72"
+								},
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 79,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L79"
+								}
+							],
+							"getSignature": {
+								"id": 159,
+								"name": "far",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 6,
+									"name": "ICameraLens.far"
+								}
+							},
+							"setSignature": {
+								"id": 160,
+								"name": "far",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 161,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 6,
+									"name": "ICameraLens.far"
+								}
+							},
+							"implementationOf": {
+								"type": "reference",
+								"id": 6,
+								"name": "ICameraLens.far"
+							}
+						},
+						{
+							"id": 150,
+							"name": "fov",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 55,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L55"
+								},
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 59,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L59"
+								}
+							],
+							"getSignature": {
+								"id": 151,
+								"name": "fov",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							},
+							"setSignature": {
+								"id": 152,
+								"name": "fov",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 153,
+										"name": "f",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								}
+							}
+						},
+						{
+							"id": 154,
+							"name": "near",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 62,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L62"
+								},
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 69,
+									"character": 6,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L69"
+								}
+							],
+							"getSignature": {
+								"id": 155,
+								"name": "near",
+								"kind": 524288,
+								"kindString": "Get signature",
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 5,
+									"name": "ICameraLens.near"
+								}
+							},
+							"setSignature": {
+								"id": 156,
+								"name": "near",
+								"kind": 1048576,
+								"kindString": "Set signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 157,
+										"name": "v",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "void"
+								},
+								"implementationOf": {
+									"type": "reference",
+									"id": 5,
+									"name": "ICameraLens.near"
+								}
+							},
+							"implementationOf": {
+								"type": "reference",
+								"id": 5,
+								"name": "ICameraLens.near"
+							}
+						},
+						{
+							"id": 181,
+							"name": "_invalidate",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 152,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L152"
+								}
+							],
+							"signatures": [
+								{
+									"id": 182,
+									"name": "_invalidate",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 179,
+							"name": "_updateProjection",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 126,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L126"
+								}
+							],
+							"signatures": [
+								{
+									"id": 180,
+									"name": "_updateProjection",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 172,
+							"name": "getHorizontalFov",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 107,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L107"
+								}
+							],
+							"signatures": [
+								{
+									"id": 173,
+									"name": "getHorizontalFov",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						{
+							"id": 148,
+							"name": "getProjection",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 47,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L47"
+								}
+							],
+							"signatures": [
+								{
+									"id": 149,
+									"name": "getProjection",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "mat4",
+										"qualifiedName": "mat4",
+										"package": "@types/gl-matrix"
+									},
+									"implementationOf": {
+										"type": "reference",
+										"id": 4,
+										"name": "ICameraLens.getProjection"
+									}
+								}
+							],
+							"implementationOf": {
+								"type": "reference",
+								"id": 3,
+								"name": "ICameraLens.getProjection"
+							}
+						},
+						{
+							"id": 174,
+							"name": "getVerticalFov",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 113,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L113"
+								}
+							],
+							"signatures": [
+								{
+									"id": 175,
+									"name": "getVerticalFov",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						{
+							"id": 176,
+							"name": "setAutoFov",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 119,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L119"
+								}
+							],
+							"signatures": [
+								{
+									"id": 177,
+									"name": "setAutoFov",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 178,
+											"name": "fov",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 166,
+							"name": "setHorizontalFov",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 93,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L93"
+								}
+							],
+							"signatures": [
+								{
+									"id": 167,
+									"name": "setHorizontalFov",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 168,
+											"name": "fov",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 169,
+							"name": "setVerticalFov",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/perspective-lens.ts",
+									"line": 100,
+									"character": 2,
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L100"
+								}
+							],
+							"signatures": [
+								{
+									"id": 170,
+									"name": "setVerticalFov",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 171,
+											"name": "fov",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								137
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								144,
+								140,
+								141,
+								145,
+								143,
+								139,
+								146,
+								147,
+								142
+							]
+						},
+						{
+							"title": "Accessors",
+							"children": [
+								162,
+								158,
+								150,
+								154
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								181,
+								179,
+								172,
+								148,
+								174,
+								176,
+								166,
+								169
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/perspective-lens.ts",
+							"line": 13,
+							"character": 6,
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L13"
+						}
+					],
+					"implementedTypes": [
+						{
+							"type": "reference",
+							"id": 2,
+							"name": "ICameraLens"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						136
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/perspective-lens.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L1"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				1,
+				8,
+				98,
+				135
+			]
+		}
+	]
+}
