@@ -30,7 +30,7 @@
 									"fileName": "src/ICameraLens.ts",
 									"line": 9,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L9"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ICameraLens.ts#L9"
 								}
 							],
 							"type": {
@@ -49,7 +49,7 @@
 									"fileName": "src/ICameraLens.ts",
 									"line": 8,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L8"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ICameraLens.ts#L8"
 								}
 							],
 							"type": {
@@ -68,7 +68,7 @@
 									"fileName": "src/ICameraLens.ts",
 									"line": 7,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L7"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ICameraLens.ts#L7"
 								}
 							],
 							"type": {
@@ -87,7 +87,7 @@
 									"fileName": "src/ICameraLens.ts",
 									"line": 6,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L6"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ICameraLens.ts#L6"
 								}
 							],
 							"signatures": [
@@ -128,7 +128,7 @@
 							"fileName": "src/ICameraLens.ts",
 							"line": 4,
 							"character": 17,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L4"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ICameraLens.ts#L4"
 						}
 					],
 					"implementedBy": [
@@ -158,7 +158,7 @@
 					"fileName": "src/ICameraLens.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ICameraLens.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ICameraLens.ts#L1"
 				}
 			]
 		},
@@ -175,6 +175,14 @@
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This class provides functionalities for cameras.\nYou can choose which type of projection to use with the lens."
+							}
+						]
+					},
 					"originalName": "default",
 					"children": [
 						{
@@ -186,9 +194,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 22,
+									"line": 29,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L22"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L29"
 								}
 							],
 							"signatures": [
@@ -224,6 +232,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The lens to use for this camera (the lens will affect the type of projection)"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"id": 16,
@@ -353,12 +369,20 @@
 							"flags": {
 								"isReadonly": true
 							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The view matrix for this camera"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 18,
+									"line": 22,
 									"character": 11,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L18"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L22"
 								}
 							],
 							"type": {
@@ -376,12 +400,20 @@
 							"flags": {
 								"isReadonly": true
 							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The view projection matrix for this camera"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 19,
+									"line": 24,
 									"character": 11,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L19"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L24"
 								}
 							],
 							"type": {
@@ -451,12 +483,20 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The lens this camera uses"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 16,
+									"line": 19,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L16"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L19"
 								}
 							],
 							"type": {
@@ -777,9 +817,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 64,
+									"line": 107,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L64"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L107"
 								}
 							],
 							"signatures": [
@@ -789,6 +829,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Compute camera world matrix and update camera view matrix."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 42,
@@ -796,6 +844,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "If true, the camera's parent's world matrix will not be computed"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "boolean"
@@ -936,9 +992,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 45,
+									"line": 74,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L45"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L74"
 								}
 							],
 							"signatures": [
@@ -948,6 +1004,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Compute a model view projection matrix from a transform matrix using the camera view projection matrix, and return the result.\n\nYou can use this to convert a matrix from world space to clip space.\n\n**Note:** This method returns a local matrix variable, so you should not store it for later use."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 31,
@@ -955,6 +1019,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The transform matrix to use"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "mat4",
@@ -1076,9 +1148,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 35,
+									"line": 49,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L35"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L49"
 								}
 							],
 							"signatures": [
@@ -1088,6 +1160,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Compute a model view matrix from a transform matrix using the camera view matrix.\n\nYou can use this to convert a matrix from world space to camera space."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 23,
@@ -1095,6 +1175,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The matrix to write to"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "mat4",
@@ -1108,6 +1196,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The transform matrix to use"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "mat4",
@@ -1132,9 +1228,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 40,
+									"line": 61,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L40"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L61"
 								}
 							],
 							"signatures": [
@@ -1144,6 +1240,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Compute a model view projection matrix from a transform matrix using the camera view projection matrix.\n\nYou can use this to convert a matrix from world space to clip space."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 27,
@@ -1151,6 +1255,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The matrix to write to"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "mat4",
@@ -1164,6 +1276,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The transform matrix to use"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "mat4",
@@ -1516,9 +1636,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 51,
+									"line": 87,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L51"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L87"
 								}
 							],
 							"signatures": [
@@ -1528,6 +1648,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Reverse project a point using the camera view projection matrix.\n\nYou can use this to transform a point from screen space to world space."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 34,
@@ -1535,6 +1663,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The matrix to write to"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "vec3",
@@ -1548,6 +1684,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The point's coordinates"
+													}
+												]
+											},
 											"type": {
 												"type": "reference",
 												"name": "vec3",
@@ -1611,9 +1755,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 58,
+									"line": 98,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L58"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L98"
 								}
 							],
 							"signatures": [
@@ -1623,6 +1767,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Update camera view projection matrix."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 38,
@@ -1630,6 +1782,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The width of the canvas"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -1641,6 +1801,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The height of the canvas"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -1720,9 +1888,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 75,
+									"line": 122,
 									"character": 9,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L75"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L122"
 								}
 							],
 							"signatures": [
@@ -1732,6 +1900,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Create a camera with an orthographic lens."
+											}
+										]
+									},
 									"type": {
 										"type": "reference",
 										"id": 9,
@@ -1758,9 +1934,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 70,
+									"line": 115,
 									"character": 9,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L70"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L115"
 								}
 							],
 							"signatures": [
@@ -1770,6 +1946,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Create a camera with a perspective lens."
+											}
+										]
+									},
 									"type": {
 										"type": "reference",
 										"id": 9,
@@ -1846,9 +2030,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 14,
+							"line": 17,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L14"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L17"
 						}
 					],
 					"typeParameters": [
@@ -1893,7 +2077,7 @@
 					"fileName": "src/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/index.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/index.ts#L1"
 				}
 			]
 		},
@@ -1923,7 +2107,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 22,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L22"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L22"
 								}
 							],
 							"signatures": [
@@ -1952,7 +2136,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 14,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L14"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L14"
 								}
 							],
 							"type": {
@@ -1971,7 +2155,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 9,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L9"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L9"
 								}
 							],
 							"type": {
@@ -1990,7 +2174,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 8,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L8"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L8"
 								}
 							],
 							"type": {
@@ -2009,7 +2193,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 16,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L16"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L16"
 								}
 							],
 							"type": {
@@ -2030,7 +2214,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 18,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L18"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L18"
 								}
 							],
 							"type": {
@@ -2049,7 +2233,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 11,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L11"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L11"
 								}
 							],
 							"type": {
@@ -2068,7 +2252,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 10,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L10"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L10"
 								}
 							],
 							"type": {
@@ -2087,7 +2271,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 13,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L13"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L13"
 								}
 							],
 							"type": {
@@ -2106,7 +2290,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 12,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L12"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L12"
 								}
 							],
 							"type": {
@@ -2125,13 +2309,13 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 78,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L78"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L78"
 								},
 								{
 									"fileName": "src/ortho-lens.ts",
 									"line": 85,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L85"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L85"
 								}
 							],
 							"getSignature": {
@@ -2196,13 +2380,13 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 68,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L68"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L68"
 								},
 								{
 									"fileName": "src/ortho-lens.ts",
 									"line": 75,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L75"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L75"
 								}
 							],
 							"getSignature": {
@@ -2267,13 +2451,13 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 58,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L58"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L58"
 								},
 								{
 									"fileName": "src/ortho-lens.ts",
 									"line": 65,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L65"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L65"
 								}
 							],
 							"getSignature": {
@@ -2338,7 +2522,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 105,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L105"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L105"
 								}
 							],
 							"signatures": [
@@ -2366,7 +2550,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 89,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L89"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L89"
 								}
 							],
 							"signatures": [
@@ -2394,7 +2578,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 41,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L41"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L41"
 								}
 							],
 							"signatures": [
@@ -2434,7 +2618,7 @@
 									"fileName": "src/ortho-lens.ts",
 									"line": 49,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L49"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L49"
 								}
 							],
 							"signatures": [
@@ -2542,7 +2726,7 @@
 							"fileName": "src/ortho-lens.ts",
 							"line": 5,
 							"character": 6,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L5"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L5"
 						}
 					],
 					"implementedTypes": [
@@ -2567,7 +2751,7 @@
 					"fileName": "src/ortho-lens.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/ortho-lens.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/ortho-lens.ts#L1"
 				}
 			]
 		},
@@ -2597,7 +2781,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 28,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L28"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L28"
 								}
 							],
 							"signatures": [
@@ -2626,7 +2810,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 21,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L21"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L21"
 								}
 							],
 							"type": {
@@ -2645,7 +2829,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 17,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L17"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L17"
 								}
 							],
 							"type": {
@@ -2664,7 +2848,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 18,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L18"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L18"
 								}
 							],
 							"type": {
@@ -2683,7 +2867,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 22,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L22"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L22"
 								}
 							],
 							"type": {
@@ -2702,7 +2886,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 20,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L20"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L20"
 								}
 							],
 							"type": {
@@ -2721,7 +2905,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 16,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L16"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L16"
 								}
 							],
 							"type": {
@@ -2740,7 +2924,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 24,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L24"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L24"
 								}
 							],
 							"type": {
@@ -2761,7 +2945,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 26,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L26"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L26"
 								}
 							],
 							"type": {
@@ -2780,7 +2964,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 19,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L19"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L19"
 								}
 							],
 							"type": {
@@ -2799,13 +2983,13 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 82,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L82"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L82"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
 									"line": 89,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L89"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L89"
 								}
 							],
 							"getSignature": {
@@ -2870,13 +3054,13 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 72,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L72"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L72"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
 									"line": 79,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L79"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L79"
 								}
 							],
 							"getSignature": {
@@ -2941,13 +3125,13 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 55,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L55"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L55"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
 									"line": 59,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L59"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L59"
 								}
 							],
 							"getSignature": {
@@ -2997,13 +3181,13 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 62,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L62"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L62"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
 									"line": 69,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L69"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L69"
 								}
 							],
 							"getSignature": {
@@ -3068,7 +3252,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 152,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L152"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L152"
 								}
 							],
 							"signatures": [
@@ -3096,7 +3280,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 126,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L126"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L126"
 								}
 							],
 							"signatures": [
@@ -3124,7 +3308,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 107,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L107"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L107"
 								}
 							],
 							"signatures": [
@@ -3152,7 +3336,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 47,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L47"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L47"
 								}
 							],
 							"signatures": [
@@ -3192,7 +3376,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 113,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L113"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L113"
 								}
 							],
 							"signatures": [
@@ -3220,7 +3404,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 119,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L119"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L119"
 								}
 							],
 							"signatures": [
@@ -3261,7 +3445,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 93,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L93"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L93"
 								}
 							],
 							"signatures": [
@@ -3302,7 +3486,7 @@
 									"fileName": "src/perspective-lens.ts",
 									"line": 100,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L100"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L100"
 								}
 							],
 							"signatures": [
@@ -3382,7 +3566,7 @@
 							"fileName": "src/perspective-lens.ts",
 							"line": 13,
 							"character": 6,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L13"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L13"
 						}
 					],
 					"implementedTypes": [
@@ -3407,7 +3591,7 @@
 					"fileName": "src/perspective-lens.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/59b700e/src/perspective-lens.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/2cf8718/src/perspective-lens.ts#L1"
 				}
 			]
 		}
