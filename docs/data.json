@@ -25,12 +25,20 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The aspect ratio"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ICameraLens.ts",
-									"line": 9,
+									"line": 14,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ICameraLens.ts#L9"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ICameraLens.ts#L14"
 								}
 							],
 							"type": {
@@ -44,12 +52,20 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The far plane distance"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ICameraLens.ts",
-									"line": 8,
+									"line": 12,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ICameraLens.ts#L8"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ICameraLens.ts#L12"
 								}
 							],
 							"type": {
@@ -63,12 +79,20 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The near plane distance"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ICameraLens.ts",
-									"line": 7,
+									"line": 10,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ICameraLens.ts#L7"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ICameraLens.ts#L10"
 								}
 							],
 							"type": {
@@ -85,9 +109,9 @@
 							"sources": [
 								{
 									"fileName": "src/ICameraLens.ts",
-									"line": 6,
+									"line": 8,
 									"character": 4,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ICameraLens.ts#L6"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ICameraLens.ts#L8"
 								}
 							],
 							"signatures": [
@@ -97,6 +121,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Get the projection matrix for this lens."
+											}
+										]
+									},
 									"type": {
 										"type": "reference",
 										"name": "mat4",
@@ -128,7 +160,7 @@
 							"fileName": "src/ICameraLens.ts",
 							"line": 4,
 							"character": 17,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ICameraLens.ts#L4"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ICameraLens.ts#L4"
 						}
 					],
 					"implementedBy": [
@@ -158,7 +190,7 @@
 					"fileName": "src/ICameraLens.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ICameraLens.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ICameraLens.ts#L1"
 				}
 			]
 		},
@@ -194,9 +226,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 31,
+									"line": 37,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L31"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L37"
 								}
 							],
 							"signatures": [
@@ -383,14 +415,25 @@
 										"kind": "text",
 										"text": "The view matrix for this camera"
 									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Identity 4*4 matrix"
+											}
+										]
+									}
 								]
 							},
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 23,
+									"line": 26,
 									"character": 11,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L23"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L26"
 								}
 							],
 							"type": {
@@ -414,14 +457,25 @@
 										"kind": "text",
 										"text": "The view projection matrix for this camera"
 									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Identity 4*4 matrix"
+											}
+										]
+									}
 								]
 							},
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 25,
+									"line": 31,
 									"character": 11,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L25"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L31"
 								}
 							],
 							"type": {
@@ -504,7 +558,7 @@
 									"fileName": "src/index.ts",
 									"line": 20,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L20"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L20"
 								}
 							],
 							"type": {
@@ -825,9 +879,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 109,
+									"line": 115,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L109"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L115"
 								}
 							],
 							"signatures": [
@@ -1000,9 +1054,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 76,
+									"line": 82,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L76"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L82"
 								}
 							],
 							"signatures": [
@@ -1156,9 +1210,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 51,
+									"line": 57,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L51"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L57"
 								}
 							],
 							"signatures": [
@@ -1236,9 +1290,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 63,
+									"line": 69,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L63"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L69"
 								}
 							],
 							"signatures": [
@@ -1644,9 +1698,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 89,
+									"line": 95,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L89"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L95"
 								}
 							],
 							"signatures": [
@@ -1763,9 +1817,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 100,
+									"line": 106,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L100"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L106"
 								}
 							],
 							"signatures": [
@@ -1896,9 +1950,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 124,
+									"line": 130,
 									"character": 9,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L124"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L130"
 								}
 							],
 							"signatures": [
@@ -1942,9 +1996,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 117,
+									"line": 123,
 									"character": 9,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L117"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L123"
 								}
 							],
 							"signatures": [
@@ -2040,7 +2094,7 @@
 							"fileName": "src/index.ts",
 							"line": 18,
 							"character": 21,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L18"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L18"
 						}
 					],
 					"typeParameters": [
@@ -2093,7 +2147,7 @@
 					"fileName": "src/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/index.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/index.ts#L1"
 				}
 			]
 		},
@@ -2110,6 +2164,14 @@
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This class provides functionalities for orthographic projection."
+							}
+						]
+					},
 					"originalName": "default",
 					"children": [
 						{
@@ -2121,9 +2183,9 @@
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 22,
+									"line": 59,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L22"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L59"
 								}
 							],
 							"signatures": [
@@ -2147,12 +2209,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The aspect ratio"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "1"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 14,
+									"line": 43,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L14"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L43"
 								}
 							],
 							"type": {
@@ -2166,12 +2247,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The far plane distance"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "10"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 9,
+									"line": 18,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L9"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L18"
 								}
 							],
 							"type": {
@@ -2185,12 +2285,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The near plane distance"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "0.01"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 8,
+									"line": 13,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L8"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L13"
 								}
 							],
 							"type": {
@@ -2204,12 +2323,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The projection matrix for this lens"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Identity 4*4 matrix"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 16,
+									"line": 49,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L16"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L49"
 								}
 							],
 							"type": {
@@ -2225,12 +2363,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the projection matrix is valid or not"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "false"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 18,
+									"line": 55,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L18"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L55"
 								}
 							],
 							"type": {
@@ -2244,12 +2401,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The right bound"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "1"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 11,
+									"line": 28,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L11"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L28"
 								}
 							],
 							"type": {
@@ -2263,12 +2439,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The left bound"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "-1"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 10,
+									"line": 23,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L10"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L23"
 								}
 							],
 							"type": {
@@ -2282,12 +2477,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The top bound"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "1"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 13,
+									"line": 38,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L13"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L38"
 								}
 							],
 							"type": {
@@ -2301,12 +2515,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The bottom bound"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "-1"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 12,
+									"line": 33,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L12"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L33"
 								}
 							],
 							"type": {
@@ -2320,18 +2553,26 @@
 							"kind": 262144,
 							"kindString": "Accessor",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The aspect ratio"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 78,
+									"line": 140,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L78"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L140"
 								},
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 85,
+									"line": 150,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L85"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L150"
 								}
 							],
 							"getSignature": {
@@ -2340,6 +2581,14 @@
 								"kind": 524288,
 								"kindString": "Get signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Get the aspect ratio of this lens."
+										}
+									]
+								},
 								"type": {
 									"type": "intrinsic",
 									"name": "number"
@@ -2356,6 +2605,14 @@
 								"kind": 1048576,
 								"kindString": "Set signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Set the aspect ratio of this lens."
+										}
+									]
+								},
 								"parameters": [
 									{
 										"id": 130,
@@ -2363,6 +2620,14 @@
 										"kind": 32768,
 										"kindString": "Parameter",
 										"flags": {},
+										"comment": {
+											"summary": [
+												{
+													"kind": "text",
+													"text": "The value to set"
+												}
+											]
+										},
 										"type": {
 											"type": "intrinsic",
 											"name": "number"
@@ -2391,18 +2656,26 @@
 							"kind": 262144,
 							"kindString": "Accessor",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The far plane distance"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 68,
+									"line": 124,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L68"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L124"
 								},
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 75,
+									"line": 134,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L75"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L134"
 								}
 							],
 							"getSignature": {
@@ -2411,6 +2684,14 @@
 								"kind": 524288,
 								"kindString": "Get signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Get the far plane distance of this lens."
+										}
+									]
+								},
 								"type": {
 									"type": "intrinsic",
 									"name": "number"
@@ -2427,6 +2708,14 @@
 								"kind": 1048576,
 								"kindString": "Set signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Set the far plane distance of this lens."
+										}
+									]
+								},
 								"parameters": [
 									{
 										"id": 126,
@@ -2434,6 +2723,14 @@
 										"kind": 32768,
 										"kindString": "Parameter",
 										"flags": {},
+										"comment": {
+											"summary": [
+												{
+													"kind": "text",
+													"text": "The value to set"
+												}
+											]
+										},
 										"type": {
 											"type": "intrinsic",
 											"name": "number"
@@ -2462,18 +2759,26 @@
 							"kind": 262144,
 							"kindString": "Accessor",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The near plane distance"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 58,
+									"line": 108,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L58"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L108"
 								},
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 65,
+									"line": 118,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L65"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L118"
 								}
 							],
 							"getSignature": {
@@ -2482,6 +2787,14 @@
 								"kind": 524288,
 								"kindString": "Get signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Get the near plane distance of this lens."
+										}
+									]
+								},
 								"type": {
 									"type": "intrinsic",
 									"name": "number"
@@ -2498,6 +2811,14 @@
 								"kind": 1048576,
 								"kindString": "Set signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Set the near plane distance of this lens."
+										}
+									]
+								},
 								"parameters": [
 									{
 										"id": 122,
@@ -2505,6 +2826,14 @@
 										"kind": 32768,
 										"kindString": "Parameter",
 										"flags": {},
+										"comment": {
+											"summary": [
+												{
+													"kind": "text",
+													"text": "The value to set"
+												}
+											]
+										},
 										"type": {
 											"type": "intrinsic",
 											"name": "number"
@@ -2536,9 +2865,9 @@
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 105,
+									"line": 174,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L105"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L174"
 								}
 							],
 							"signatures": [
@@ -2548,6 +2877,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Invalidate lens projection matrix."
+											}
+										]
+									},
 									"type": {
 										"type": "intrinsic",
 										"name": "void"
@@ -2564,9 +2901,9 @@
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 89,
+									"line": 156,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L89"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L156"
 								}
 							],
 							"signatures": [
@@ -2576,6 +2913,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Update lens projection matrix."
+											}
+										]
+									},
 									"type": {
 										"type": "intrinsic",
 										"name": "void"
@@ -2592,9 +2937,9 @@
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 41,
+									"line": 82,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L41"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L82"
 								}
 							],
 							"signatures": [
@@ -2604,6 +2949,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Get the projection matrix for this lens.\nThe projection matrix is updated before (if it was declared invalid)."
+											}
+										]
+									},
 									"type": {
 										"type": "reference",
 										"name": "mat4",
@@ -2632,9 +2985,9 @@
 							"sources": [
 								{
 									"fileName": "src/ortho-lens.ts",
-									"line": 49,
+									"line": 96,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L49"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L96"
 								}
 							],
 							"signatures": [
@@ -2644,6 +2997,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Set the bounds of this lens."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 115,
@@ -2651,6 +3012,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The left bound"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2662,6 +3031,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The right bound"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2673,6 +3050,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The bottom bound"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2684,6 +3069,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The top bound"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -2740,9 +3133,9 @@
 					"sources": [
 						{
 							"fileName": "src/ortho-lens.ts",
-							"line": 5,
+							"line": 7,
 							"character": 6,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L5"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L7"
 						}
 					],
 					"implementedTypes": [
@@ -2767,7 +3160,7 @@
 					"fileName": "src/ortho-lens.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/ortho-lens.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/ortho-lens.ts#L1"
 				}
 			]
 		},
@@ -2784,6 +3177,14 @@
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This class provides functionalities for perspective projection."
+							}
+						]
+					},
 					"originalName": "default",
 					"children": [
 						{
@@ -2795,9 +3196,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 28,
+									"line": 65,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L28"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L65"
 								}
 							],
 							"signatures": [
@@ -2821,12 +3222,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The aspect ratio"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "1"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 21,
+									"line": 46,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L21"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L46"
 								}
 							],
 							"type": {
@@ -2840,12 +3260,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The far plane distance"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "10"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 17,
+									"line": 26,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L17"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L26"
 								}
 							],
 							"type": {
@@ -2859,12 +3298,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The field of view"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Math.PI/3"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 18,
+									"line": 31,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L18"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L31"
 								}
 							],
 							"type": {
@@ -2878,12 +3336,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The mode of field of view (vertical, horizontal or auto)"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "0"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 22,
+									"line": 51,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L22"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L51"
 								}
 							],
 							"type": {
@@ -2897,12 +3374,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The horizontal field of view"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "0"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 20,
+									"line": 41,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L20"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L41"
 								}
 							],
 							"type": {
@@ -2916,12 +3412,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The near plane distance"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "0.01"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 16,
+									"line": 21,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L16"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L21"
 								}
 							],
 							"type": {
@@ -2935,12 +3450,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The projection matrix for this lens"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Identity 4*4 matrix"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 24,
+									"line": 57,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L24"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L57"
 								}
 							],
 							"type": {
@@ -2956,12 +3490,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the projection matrix is valid or not"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "false"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 26,
+									"line": 63,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L26"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L63"
 								}
 							],
 							"type": {
@@ -2975,12 +3528,31 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The vertical field of view"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@defaultValue",
+										"content": [
+											{
+												"kind": "text",
+												"text": "0"
+											}
+										]
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 19,
+									"line": 36,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L19"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L36"
 								}
 							],
 							"type": {
@@ -2994,18 +3566,26 @@
 							"kind": 262144,
 							"kindString": "Accessor",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The aspect ratio"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 82,
+									"line": 144,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L82"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L144"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 89,
+									"line": 154,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L89"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L154"
 								}
 							],
 							"getSignature": {
@@ -3014,6 +3594,14 @@
 								"kind": 524288,
 								"kindString": "Get signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Get the aspect ratio of this lens."
+										}
+									]
+								},
 								"type": {
 									"type": "intrinsic",
 									"name": "number"
@@ -3030,6 +3618,14 @@
 								"kind": 1048576,
 								"kindString": "Set signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Set the aspect ratio of this lens."
+										}
+									]
+								},
 								"parameters": [
 									{
 										"id": 165,
@@ -3037,6 +3633,14 @@
 										"kind": 32768,
 										"kindString": "Parameter",
 										"flags": {},
+										"comment": {
+											"summary": [
+												{
+													"kind": "text",
+													"text": "The value to set"
+												}
+											]
+										},
 										"type": {
 											"type": "intrinsic",
 											"name": "number"
@@ -3065,18 +3669,26 @@
 							"kind": 262144,
 							"kindString": "Accessor",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The far plane distance"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 72,
+									"line": 128,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L72"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L128"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 79,
+									"line": 138,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L79"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L138"
 								}
 							],
 							"getSignature": {
@@ -3085,6 +3697,14 @@
 								"kind": 524288,
 								"kindString": "Get signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Get the far plane distance of this lens."
+										}
+									]
+								},
 								"type": {
 									"type": "intrinsic",
 									"name": "number"
@@ -3101,6 +3721,14 @@
 								"kind": 1048576,
 								"kindString": "Set signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Set the far plane distance of this lens."
+										}
+									]
+								},
 								"parameters": [
 									{
 										"id": 161,
@@ -3108,6 +3736,14 @@
 										"kind": 32768,
 										"kindString": "Parameter",
 										"flags": {},
+										"comment": {
+											"summary": [
+												{
+													"kind": "text",
+													"text": "The value to set"
+												}
+											]
+										},
 										"type": {
 											"type": "intrinsic",
 											"name": "number"
@@ -3139,15 +3775,15 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 55,
+									"line": 98,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L55"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L98"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 59,
+									"line": 106,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L59"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L106"
 								}
 							],
 							"getSignature": {
@@ -3156,6 +3792,14 @@
 								"kind": 524288,
 								"kindString": "Get signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Get the field of view set for this lens.\nIt can be the vertical or horizontal fov depending on the fov mode."
+										}
+									]
+								},
 								"type": {
 									"type": "intrinsic",
 									"name": "number"
@@ -3167,6 +3811,14 @@
 								"kind": 1048576,
 								"kindString": "Set signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Shortcut to PerspectiveLens#setVerticalFov."
+										}
+									]
+								},
 								"parameters": [
 									{
 										"id": 153,
@@ -3174,6 +3826,14 @@
 										"kind": 32768,
 										"kindString": "Parameter",
 										"flags": {},
+										"comment": {
+											"summary": [
+												{
+													"kind": "text",
+													"text": "The value to set"
+												}
+											]
+										},
 										"type": {
 											"type": "intrinsic",
 											"name": "number"
@@ -3192,18 +3852,26 @@
 							"kind": 262144,
 							"kindString": "Accessor",
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The near plane distance"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 62,
+									"line": 112,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L62"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L112"
 								},
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 69,
+									"line": 122,
 									"character": 6,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L69"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L122"
 								}
 							],
 							"getSignature": {
@@ -3212,6 +3880,14 @@
 								"kind": 524288,
 								"kindString": "Get signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Get the near plane distance of this lens."
+										}
+									]
+								},
 								"type": {
 									"type": "intrinsic",
 									"name": "number"
@@ -3228,6 +3904,14 @@
 								"kind": 1048576,
 								"kindString": "Set signature",
 								"flags": {},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "Set the near plane distance of this lens."
+										}
+									]
+								},
 								"parameters": [
 									{
 										"id": 157,
@@ -3235,6 +3919,14 @@
 										"kind": 32768,
 										"kindString": "Parameter",
 										"flags": {},
+										"comment": {
+											"summary": [
+												{
+													"kind": "text",
+													"text": "The value to set"
+												}
+											]
+										},
 										"type": {
 											"type": "intrinsic",
 											"name": "number"
@@ -3266,9 +3958,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 152,
+									"line": 238,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L152"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L238"
 								}
 							],
 							"signatures": [
@@ -3278,6 +3970,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Invalidate lens projection matrix."
+											}
+										]
+									},
 									"type": {
 										"type": "intrinsic",
 										"name": "void"
@@ -3294,9 +3994,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 126,
+									"line": 210,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L126"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L210"
 								}
 							],
 							"signatures": [
@@ -3306,6 +4006,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Update lens projection matrix."
+											}
+										]
+									},
 									"type": {
 										"type": "intrinsic",
 										"name": "void"
@@ -3322,9 +4030,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 107,
+									"line": 182,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L107"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L182"
 								}
 							],
 							"signatures": [
@@ -3334,6 +4042,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Get the computed horizontal field of view of this lens."
+											}
+										]
+									},
 									"type": {
 										"type": "intrinsic",
 										"name": "number"
@@ -3350,9 +4066,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 47,
+									"line": 87,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L47"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L87"
 								}
 							],
 							"signatures": [
@@ -3362,6 +4078,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Get the projection matrix for this lens.\nThe projection matrix is updated before (if it was declared invalid)."
+											}
+										]
+									},
 									"type": {
 										"type": "reference",
 										"name": "mat4",
@@ -3390,9 +4114,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 113,
+									"line": 190,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L113"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L190"
 								}
 							],
 							"signatures": [
@@ -3402,6 +4126,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Get the computed vertical field of view of this lens."
+											}
+										]
+									},
 									"type": {
 										"type": "intrinsic",
 										"name": "number"
@@ -3418,9 +4150,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 119,
+									"line": 201,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L119"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L201"
 								}
 							],
 							"signatures": [
@@ -3430,6 +4162,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Set the field of view of this lens.\nThe value will be used for either the vertical or horizontal fov depending on the aspect ratio.\nThe fov mode will be changed to auto."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 178,
@@ -3437,6 +4177,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The value to set"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -3459,9 +4207,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 93,
+									"line": 162,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L93"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L162"
 								}
 							],
 							"signatures": [
@@ -3471,6 +4219,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Set the horizontal field of view of this lens.\nThe fov mode will be changed to horizontal."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 168,
@@ -3478,6 +4234,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The value to set"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -3500,9 +4264,9 @@
 							"sources": [
 								{
 									"fileName": "src/perspective-lens.ts",
-									"line": 100,
+									"line": 173,
 									"character": 2,
-									"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L100"
+									"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L173"
 								}
 							],
 							"signatures": [
@@ -3512,6 +4276,14 @@
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Set the vertical field of view of this lens.\nThe fov mode will be changed to vertical."
+											}
+										]
+									},
 									"parameters": [
 										{
 											"id": 171,
@@ -3519,6 +4291,14 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The value to set"
+													}
+												]
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -3580,9 +4360,9 @@
 					"sources": [
 						{
 							"fileName": "src/perspective-lens.ts",
-							"line": 13,
+							"line": 15,
 							"character": 6,
-							"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L13"
+							"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L15"
 						}
 					],
 					"implementedTypes": [
@@ -3607,7 +4387,7 @@
 					"fileName": "src/perspective-lens.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/evanmartiin/nanogl-camera/blob/d0a631a/src/perspective-lens.ts#L1"
+					"url": "https://github.com/evanmartiin/nanogl-camera/blob/4dbc69d/src/perspective-lens.ts#L1"
 				}
 			]
 		}

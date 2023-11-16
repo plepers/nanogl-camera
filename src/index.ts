@@ -19,9 +19,15 @@ export default class Camera<TLens extends ICameraLens = ICameraLens> extends Nod
   /** The lens this camera uses */
   lens : TLens;
 
-  /** The view matrix for this camera */
+  /**
+   * The view matrix for this camera
+   * @defaultValue Identity 4*4 matrix
+   */
   readonly _view    : mat4;
-  /** The view projection matrix for this camera */
+  /**
+   * The view projection matrix for this camera
+   * @defaultValue Identity 4*4 matrix
+   */
   readonly _viewProj: mat4;
 
   /**
