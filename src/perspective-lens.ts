@@ -92,7 +92,7 @@ class PerspectiveLens implements ICameraLens {
   }
 
   /**
-   * Shortcut to PerspectiveLens#setVerticalFov.
+   * Shortcut to {@link PerspectiveLens#setVerticalFov}.
    * @param f The value to set
    */
   set fov(f){
