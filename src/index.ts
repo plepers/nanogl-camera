@@ -13,6 +13,7 @@ const  IMVP = mat4.create();
 /**
  * This class provides functionalities for cameras.
  * You can choose which type of projection to use with the lens.
+ * @typeParam TLens The type of lens this camera uses
  */
 export default class Camera<TLens extends ICameraLens = ICameraLens> extends Node {
   /** The lens this camera uses */
@@ -24,7 +25,8 @@ export default class Camera<TLens extends ICameraLens = ICameraLens> extends Nod
   readonly _viewProj: mat4;
 
   /**
-   * @param lens The lens to use for this camera (the lens will affect the type of projection)
+   * @typeParam TLens The type of lens this camera uses
+   * @param lens The lens to use for this camera
    */
   constructor( lens : TLens ){
 
@@ -67,7 +69,7 @@ export default class Camera<TLens extends ICameraLens = ICameraLens> extends Nod
    *
    * You can use this to convert a matrix from world space to clip space.
    *
-   * **Note:** This method returns a local matrix variable, so you should not store it for later use.
+   * **Note :** This method returns a local matrix variable, so you should not store it for later use.
    *
    * @param model The transform matrix to use
    */
